@@ -39,7 +39,7 @@ function Attraction({ props, setStorage}) {
 
   return (
     <div>
-      <Popup open={open} closeOnDocumentClick onClose={setOpen(false)}>
+      <Popup open={open} closeOnDocumentClick onClose={() => setOpen(false)}>
         <Row>
           <div className="popUpHours">
             <Col><h5 className="text-center">שעות הפעילות</h5></Col>
