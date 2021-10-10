@@ -1,0 +1,37 @@
+.types_box {
+  height: 3rem;
+  position: relative;
+  font-family: Rubik, sans-serif;
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 2px 0 0 2px;
+  margin-bottom: 3px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media only screen and (max-width: 552px) {
+  .types_box {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .types_box {
+    display: flex;
+    height: 3rem;
+    position: relative;
+    font-family: Rubik, sans-serif;
+    border: 1px solid #eee;
+    border-top: none;
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    margin-bottom: 3px;
+    background-color: #ffffff;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

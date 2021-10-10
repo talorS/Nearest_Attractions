@@ -1,0 +1,35 @@
+.attractions {
+  justify-self: center;
+  list-style-type: none;
+  width: 695px;
+  max-width: 695px;
+}
+
+@media only screen and (max-width: 745px) {
+  .wrapper {
+    width: 506px;
+    max-width: 506px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .wrapper {
+    width: 420px;
+    max-width: 420px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .wrapper {
+    width: 374px;
+    max-width: 374px;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .wrapper {
+    width: 276px;
+    max-width: 276px;
+  }
+}
