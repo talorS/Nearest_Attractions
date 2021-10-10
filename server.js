@@ -19,9 +19,12 @@ app.use(cors());
 // setup route path
 app.use("/api", atrRoute);
 
+app.get('/', function(req, res) {
+  res.redirect('/api');
+});
+
 // listen for requests
-const port = process.env.PORT || 8080;
-var server = app.listen(port, () => {
+var server = app.listen(process.env.PORT, () => {
   console.log(`===== Server is running on port ${process.env.PORT}! =====`);
 });
 
