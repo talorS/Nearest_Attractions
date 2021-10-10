@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const atrRoute = require("./routes/attractionsRouter");
 const cors = require('cors');
+const path = require('path');
 
 //------------------------Pets WS Server------------------------------------------//
 dotenv.config();
@@ -13,6 +14,8 @@ var app = express();
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+// Serve static files from the React frontend app
+app.use(express.static(path.join(__dirname, 'client/build')))
 //Allowing get requests (access) from any unknown domains 
 app.use(cors());
 
