@@ -1,7 +1,9 @@
 # Nearest_Attractions App : https://nearestattractions.herokuapp.com/
 
 **Server written with Node.js + Express.
+/n
 **Client written with React Hooks.
+**Database created with mongoDB.
 
 For testing RESTFul API you can run 'npm test' or test it using Postman app
 CRUD Operations:
