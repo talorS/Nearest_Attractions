@@ -1,4 +1,4 @@
-# Nearest_Attractions App : https://nearestattractions.herokuapp.com/
+# Nearest Attractions url : https://nearestattractions.herokuapp.com/
 
 **Server written with Node.js + Express.
 
