@@ -8,7 +8,6 @@ import './Attraction.css'
 function Attraction({ props, setStorage}) {
   const [like, setLike] = useState(false);
   const [open, setOpen] = useState(false);
-  const closeModal = () => setOpen(false);
   const dipsatch = useDispatch();
   
    useEffect(() => {
@@ -17,7 +16,6 @@ function Attraction({ props, setStorage}) {
 }, [props.id])
   
  
-
   const handelLike = () => {
     const favorits = localStorage.getItem("favorits")? JSON.parse(localStorage.getItem("favorits")) : [];
     if (!favorits.includes(props.id)) {
@@ -41,12 +39,12 @@ function Attraction({ props, setStorage}) {
 
   return (
     <div>
-      <Popup open={open} closeOnDocumentClick onClose={closeModal}>
+      <Popup open={open} closeOnDocumentClick onClose={setOpen(false)}>
         <Row>
           <div className="popUpHours">
             <Col><h5 className="text-center">שעות הפעילות</h5></Col>
             <Col>{props.openingHours.replace('</br>', "\r\n")}</Col>
-            <Col><button className="btnColse btn btn-outline-secondary" onClick={() => setOpen(o => !o)}>סגור</button></Col></div>
+            <Col><button className="btnClose btn btn-outline-secondary" onClick={() => setOpen(!open)}>סגור</button></Col></div>
         </Row>
       </Popup>
 
