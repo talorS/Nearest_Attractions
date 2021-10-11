@@ -4,7 +4,7 @@ const atrRoute = require("./routes/attractionsRouter");
 const cors = require('cors');
 const path = require('path');
 
-//------------------------Pets WS Server------------------------------------------//
+//------------------------Attractions WS Server------------------------------------------//
 dotenv.config();
 var db = require('./configs/database');
 //database seeding
