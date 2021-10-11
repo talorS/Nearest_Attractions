@@ -1,16 +1,21 @@
 .header {
   display: grid;
-  justify-items: center;
   position:absolute;
   width: 100%;
   margin-top: -100px;
+  margin-right: 25px;
 }
 
-.favorits--a {
-  justify-self: self-end;
+.favorits {
+  justify-self:flex-end;
   align-self: center;
   text-decoration: none;
   transform: translate(3rem, 2rem);
+}
+
+.iconLike {
+  margin-bottom: -5px;
+  margin-left: 60px;
 }
 
 .counter {
@@ -21,7 +26,7 @@
   font-family: Rubik, sans-serif;
   position: absolute;
   top: -3px;
-  right: -20px;
+  right: -10px;
   width: auto;
   line-height: 13px;
   border-radius: 6px;
@@ -31,16 +36,20 @@
 }
 
 @media only screen and (max-width: 498px) {
-  .favorits--a {
-    transform: translate(2rem, 1.5rem);
+  .favorits {
+    transform: translate(-2rem, 1.5rem);
   }
 }
 
-@media only screen and (max-width: 367px) {
-  .favorits--a {
-    transform: translate(0.1rem, 1.5rem);
+@media only screen and (max-width: 376px) {
+  .favorits {
+    transform: translate(-0.1rem, -0.5rem);
   }
-  .favorits--a span {
+  .favorits span {
     font-size: 0.7rem;
+  }
+  .iconLike{
+    margin-left: 1px;
+    margin-bottom: -10px;
   }
 }

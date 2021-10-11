@@ -1,5 +1,6 @@
 import "./Favorites.css";
 import { FcLike } from "react-icons/fc";
+import { Row, Col } from 'react-bootstrap'
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
@@ -10,17 +11,17 @@ function Favorites() {
   useEffect(() => {
     setFavorites(counter);
   }, [counter]);
-  
+
   return (
-    <nav className="header">
-      <div className="favorits--a">
+    <Row className="m-2 pt-3 pb-3 header">
+      <Col className="favorits" xs={6} md={2} lg={2}>
         <span>
           <FcLike className="iconLike" />
           <span className="counter">{favorits}</span>
           מועדפים
         </span>
-      </div>
-    </nav>
+      </Col>
+    </Row>
   );
 }
 

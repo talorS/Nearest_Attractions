@@ -67,3 +67,9 @@ a{
     color: tomato;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 415px) {
+    .attraction {
+        width: 60%;
+    }
+  }
